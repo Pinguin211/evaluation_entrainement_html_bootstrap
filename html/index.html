@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Les resto du coeurs</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+<body>
+<header>
+    <div class="row">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="../assets/logo.png" alt="logo">
+                </a>
+                <a class="navbar-brand" href="#"><h1>Les Restos du coeurs</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Événements</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">Connexion</a>
+                            <ul class="dropdown-menu" aria-labelledby="connectionDropdown">
+                                <li><a class="dropdown-item" href="#">Form de connection</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Inscrivez vous !</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="row">
+     <article class="col-md-8">
+            <section class="row">
+                <div class="col-3">
+                    <img src="../assets/benevole.svg" class="img-fluid" alt="benevole">
+                </div>
+                <div class="col">
+                    <h2>Devenir Bénévole</h2>
+                    <p>
+                        Toutes les bonnes volontés et les savoir-faire sont utiles pour développer les diverses actions de l’association. Postulez à une offre ou proposez votre aide !
+                    </p>
+                </div>
+                <div class="row">
+                    <button class="btn section_button" type="button">S'engager</button>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-3">
+                    <img src="../assets/don.svg" class="img-fluid" alt="don">
+                </div>
+                <div class="col">
+                    <h2>Faire un don</h2>
+                    <p>
+                        La générosité des donateurs est essentielle pour le fonctionnement des Restos. Sans les dons, nous ne pourrions par assurer nos missions sociales.
+                    </p>
+                </div>
+                <div class="row">
+                    <button class="btn section_button" type="button">Faire un don en ligne</button>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-3">
+                    <img src="../assets/map.svg" class="img-fluid" alt="map">
+                </div>
+                <div class="col">
+                    <h2>Ou nous trouver ?</h2>
+                    <p>
+                        Cherchez les Associations Départementales les plus proches de chez vous ! Coordonnées, activités proposées... Retrouvez toutes les informations qui vous seront utiles.                    </p>
+                </div>
+                <div class="row">
+                    <button class="btn section_button" type="button">Voir sur la carte</button>
+                </div>
+            </section>
+     </article>
+     <aside class="col-md-4">
+         <h2>Les événements :</h2>
+         <section class="row">
+             <div href="#" class="event">
+                <img src="../assets/event1/principale.webp" class="img-fluid img-event" alt="event1">
+                 <div class="fadedbox">
+                    <p class="text">Lancement de la 38ème campagne des Restos du Cœur</p>
+                 </div>
+             </div>
+         </section>
+         <section class="row">
+             <div href="#" class="event">
+                 <img src="../assets/event2/principale.webp" class="img-fluid img-event" alt="event2">
+                 <div class="fadedbox">
+                     <p class="text">Nous faisons tout pour que la vie reste la vie.</p>
+                 </div>
+             </div>
+         </section>
+         <section class="row">
+             <div href="#" class="event">
+                 <img src="../assets/event3/principale.webp" class="img-fluid img-event" alt="event3">
+                 <div class="fadedbox">
+                     <p class="text">Au cœur des Restos – Reportage pour le lancement de la 38ème campagne</p>
+                 </div>
+             </div>
+         </section>
+
+     </aside>
+</main>
+<footer>
+
+</footer>
+<script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
