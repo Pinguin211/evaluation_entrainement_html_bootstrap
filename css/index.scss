@@ -1,7 +1,7 @@
 
 @mixin body ($margin-sides) {
   body {
-    margin: 2vh $margin-sides 0 $margin-sides;
+    margin: 0 $margin-sides 0 $margin-sides;
   }
 }
 
@@ -18,6 +18,14 @@
 @media screen and (max-width: 768px){
   @include body(5vw);
   @include section(0);
+}
+
+header {
+  position: fixed;
+  background-color: pink;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .section_button {
@@ -53,6 +61,28 @@
 .event:focus .fadedbox, {
   opacity: 0.9
 }
+
+
+/* Footer */
+footer {
+  background-color: pink;
+  padding: 10px 3vw 10px 3vw;
+  text-align: center;
+}
+
+.social a {
+  margin: 5% 5%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.reference-list li {
+  margin: 5% 5%;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+
 
 
 
