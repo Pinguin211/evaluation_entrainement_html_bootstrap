@@ -1,13 +1,12 @@
-
-@mixin body ($margin-sides) {
-  body {
-    margin: 0 $margin-sides 0 $margin-sides;
+@mixin body ($padding-sides) {
+  main {
+    padding: 100px $padding-sides 0 $padding-sides;
   }
 }
 
-@mixin section($margin-sides) {
+@mixin section($padding-sides) {
   section {
-    margin: 50px $margin-sides 50px $margin-sides;
+    margin: 50px $padding-sides 50px $padding-sides;
   }
 }
 

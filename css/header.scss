@@ -1,8 +1,52 @@
 /* header */
 header {
   position: fixed;
-  background-color: pink;
-  top: 0;
+  background-color: #ECECEC;
+  box-shadow: 0 3px 10px #3F3F3F;
   left: 0;
   right: 0;
+
+  .navbar-expand-md, .navbar-brand{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #logo {
+    height: 70px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar-nav>li{
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    filter: brightness(100%);
+  }
+
+  @media screen and (min-width: 768px) {
+    .navbar-nav>li {
+      border-left: 2px grey solid;
+    }
+    .navbar-nav>li:last-of-type {
+      border-right: 2px grey solid;
+    }
+  }
+
+
+  .navbar-nav>li>a {
+    transition: 200ms ease;
+    height: 100%;
+    font-style: italic;
+  }
+  .navbar-nav>li>a:hover {
+    filter: brightness(85%);
+    background-color: #ECECEC;
+  }
 }
