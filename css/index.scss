@@ -1,56 +1,102 @@
-@mixin body ($padding-sides) {
-  main {
-    padding: 100px $padding-sides 0 $padding-sides;
+@mixin main ($margin-sides) {
+  main.row {
+    margin: 0 $margin-sides 0 $margin-sides;
   }
 }
 
-@mixin section($padding-sides) {
-  section {
-    margin: 50px $padding-sides 50px $padding-sides;
-  }
+@media screen and (min-width: 1400px) {
+  @include main(15vw);
 }
-
+@media screen and (min-width: 1200px) {
+  @include main(12vw);
+}
+@media screen and (min-width: 992px) {
+  @include main(10vw);
+}
 @media screen and (min-width: 768px) {
-  @include body(15vw);
-  @include section(5vw);
+  @include main(7vw);
 }
 @media screen and (max-width: 768px){
-  @include body(5vw);
-  @include section(0);
+  @include main(5vw);
 }
 
-.section_button {
-  background-color: pink;
-}
+main {
+  padding: 100px 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 30px black;
 
-.event {
-  padding: 0 0;
-  overflow: hidden;
-}
+  article, aside {
+    margin: 0 20px;
+  }
 
-.img-event {
-  width: 100%;
-  height: 100%;
-  transition: 800ms ease;
-  opacity: 1;
-}
+  article {
+    section {
+      margin: 5vh;
+      box-shadow: 0 0 3px black;
+      padding: 5% 5% 5% 5%;
+      transition: 400ms ease;
+    }
+    section:hover {
+      box-shadow: 0 0 10px black;
+    }
 
-.fadedbox {
-  transform: translateY(-100%);
-  transition: 800ms ease;
-  background-color: grey;
-  align-self: center;
-  opacity: 0;
-}
+    .section_button {
+      background-color: pink;
+    }
+    .section_button:hover {
+      filter: brightness(85%);
+      background-color: pink;
+    }
+  }
 
-.text {
-  color: white;
-  opacity: 1;
-}
+  aside {
+    box-shadow: 0 0 3px black;
+    text-align: center;;
 
-.event:hover .fadedbox,
-.event:focus .fadedbox, {
-  opacity: 0.9
+    h2 {
+      font-family: bootstrap-icons;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .event {
+      overflow: hidden;
+      position: relative;
+      padding: 0 0;
+      margin-top: 5%;
+
+
+      .img-event {
+        transition: 800ms ease;
+        width: 100%;
+      }
+
+      .fadedbox {
+        transform: translateY(-100%);
+        position: absolute;
+        transition: 800ms ease;
+        background-color: grey;
+        opacity: 0;
+        width: 100%;
+      }
+
+      .text {
+        text-align: center;
+        color: white;
+        opacity: 1;
+      }
+    }
+
+    .event:hover, .event:focus {
+      .fadedbox {
+        opacity: 0.9;
+      }
+      .img-event {
+        filter: brightness(60%);
+      }
+    }
+  }
+
 }
 
 
