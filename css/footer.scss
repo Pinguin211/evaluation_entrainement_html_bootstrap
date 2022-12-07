@@ -1,29 +1,31 @@
 /* Footer */
 footer {
-  background-color: pink;
-  padding: 10px 3vw 10px 3vw;
-  text-align: center;
+  .container-fluid {
+    background-color: pink;
+    text-align: center;
+    box-shadow: 0 10px 30px black;
 
-  .social a {
-    margin: 5% 5%;
-    font-size: 1.5rem;
-    color: white;
+    .social a {
+      margin: 5% 5%;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .reference-list li {
+      margin: 5% 5%;
+      display: inline-block;
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    h3 {
+      font-style: italic;
+      font-family: bootstrap-icons;
+    }
+
+    .reference-list li a {
+      color: black;
+    }
+
   }
-
-  .reference-list li {
-    margin: 5% 5%;
-    display: inline-block;
-    font-size: 1rem;
-    font-style: italic;
-  }
-
-  h3 {
-    font-style: italic;
-    font-family: bootstrap-icons;
-  }
-
-  .reference-list li a {
-    color: black;
-  }
-
 }

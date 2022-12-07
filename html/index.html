@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Les resto du coeurs</title>
+    <meta name="description" content="Mobilisons nous pour le Giving Tuesday pour lutter contre la précarité infantile. Rejoignez les Restos du Coeur . On compte sur vous. des Restos du Coeur. c'est possible. Un simple SMS." />
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/commun.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
 <body>
 <header>
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="../assets/logo.png" alt="logo">
@@ -45,103 +47,122 @@
         </div>
     </nav>
 </header>
-<main class="row">
-    <article class="col-md-8">
-        <section class="row">
-            <div class="col-3">
-                <img src="../assets/benevole.svg" class="img-fluid" alt="benevole">
-            </div>
-            <div class="col">
-                <h2>Devenir Bénévole</h2>
-                <p>
-                    Toutes les bonnes volontés et les savoir-faire sont utiles pour développer les diverses actions de
-                    l’association. Postulez à une offre ou proposez votre aide !
-                </p>
-            </div>
-            <div class="row">
-                <button class="btn section_button" type="button">S'engager</button>
-            </div>
-        </section>
-        <section class="row">
-            <div class="col-3">
-                <img src="../assets/don.svg" class="img-fluid" alt="don">
-            </div>
-            <div class="col">
-                <h2>Faire un don</h2>
-                <p>
-                    La générosité des donateurs est essentielle pour le fonctionnement des Restos. Sans les dons, nous
-                    ne pourrions par assurer nos missions sociales.
-                </p>
-            </div>
-            <div class="row">
-                <button class="btn section_button" type="button">Faire un don en ligne</button>
-            </div>
-        </section>
-        <section class="row">
-            <div class="col-3">
-                <img src="../assets/map.svg" class="img-fluid" alt="map">
-            </div>
-            <div class="col">
-                <h2>Ou nous trouver ?</h2>
-                <p>
-                    Cherchez les Associations Départementales les plus proches de chez vous ! Coordonnées, activités
-                    proposées... Retrouvez toutes les informations qui vous seront utiles. </p>
-            </div>
-            <div class="row">
-                <button class="btn section_button" type="button">Voir sur la carte</button>
-            </div>
-        </section>
-    </article>
-    <aside class="col">
-        <h2>Les événements :</h2>
-        <section class="row">
-            <a href="#" class="event">
-                <img src="../assets/event1/principale.webp" class="img-fluid img-event" alt="event1">
-                <div class="fadedbox">
-                    <p class="text">Lancement de la 38ème campagne des Restos du Cœur</p>
+<main>
+    <div class="row main-carousel">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/carrousel/carrousel1.jpg" class="" alt="...">
                 </div>
-            </a>
-        </section>
-        <section class="row">
-            <a href="#" class="event">
-                <img src="../assets/event2/principale.webp" class="img-fluid img-event" alt="event2">
-                <div class="fadedbox">
-                    <p class="text">Nous faisons tout pour que la vie reste la vie.</p>
+                <div class="carousel-item">
+                    <img src="../assets/carrousel/carrousel2.jpg" class="" alt="...">
                 </div>
-            </a>
-        </section>
-        <section class="row">
-            <a href="#" class="event">
-                <img src="../assets/event3/principale.webp" class="img-fluid img-event" alt="event3">
-                <div class="fadedbox">
-                    <p class="text">Au cœur des Restos – Reportage pour le lancement de la 38ème campagne</p>
+                <div class="carousel-item">
+                    <img src="../assets/carrousel/carrousel3.jpg" class="" alt="...">
                 </div>
-            </a>
-        </section>
-    </aside>
-</main>
-<footer>
-    <div class="row">
-        <h3>Pour encores plus d'actualités :</h3>
-        <div class="social">
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-snapchat"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <hr class="table-group-divider">
+    <div class="row main-content">
+        <article class="col-lg-8">
+            <section class="row">
+                <div class="col-3">
+                    <img src="../assets/benevole.svg" class="img-fluid" alt="benevole">
+                </div>
+                <div class="col">
+                    <h2>Devenir Bénévole</h2>
+                    <p>
+                        Toutes les bonnes volontés et les savoir-faire sont utiles pour développer les diverses actions de
+                        l’association. Postulez à une offre ou proposez votre aide !
+                    </p>
+                </div>
+                <div class="row">
+                    <button class="btn section_button" type="button">S'engager</button>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-3">
+                    <img src="../assets/don.svg" class="img-fluid" alt="don">
+                </div>
+                <div class="col">
+                    <h2>Faire un don</h2>
+                    <p>
+                        La générosité des donateurs est essentielle pour le fonctionnement des Restos. Sans les dons, nous
+                        ne pourrions par assurer nos missions sociales.
+                    </p>
+                </div>
+                <div class="row">
+                    <button class="btn section_button" type="button">Faire un don en ligne</button>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-3">
+                    <img src="../assets/map.svg" class="img-fluid" alt="map">
+                </div>
+                <div class="col">
+                    <h2>Ou nous trouver ?</h2>
+                    <p>
+                        Cherchez les Associations Départementales les plus proches de chez vous ! Coordonnées, activités
+                        proposées... Retrouvez toutes les informations qui vous seront utiles. </p>
+                </div>
+                <div class="row">
+                    <button class="btn section_button" type="button">Voir sur la carte</button>
+                </div>
+            </section>
+        </article>
+        <aside class="col">
+            <h2>Actualités:</h2>
+            <section class="row">
+                <a href="#" class="event">
+                    <img src="../assets/event1/principale.webp" class="img-fluid img-event" alt="event1">
+                    <div class="fadedbox">
+                        <p class="text">Lancement de la 38ème campagne des Restos du Cœur</p>
+                    </div>
+                </a>
+            </section>
+            <section class="row">
+                <a href="#" class="event">
+                    <img src="../assets/event2/principale.webp" class="img-fluid img-event" alt="event2">
+                    <div class="fadedbox">
+                        <p class="text">Nous faisons tout pour que la vie reste la vie.</p>
+                    </div>
+                </a>
+            </section>
+            <section class="row">
+                <a href="#" class="event">
+                    <img src="../assets/event3/principale.webp" class="img-fluid img-event" alt="event3">
+                    <div class="fadedbox">
+                        <p class="text">Au cœur des Restos – Reportage pour le lancement de la 38ème campagne</p>
+                    </div>
+                </a>
+            </section>
+        </aside>
     </div>
-    <div class="row">
-        <ul class="reference-list">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Événements</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-        </ul>
-    </div>
-    <div class="row">
-        <p>Les Restos Du Cœur © 2022</p>
+</main>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <h3>Pour encores plus d'actualités :</h3>
+            <div class="social">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-snapchat"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="table-group-divider">
+        </div>
+        <div class="row">
+            <ul class="reference-list">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Événements</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p>Les Restos Du Cœur © 2022</p>
+        </div>
     </div>
 </footer>
 <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>

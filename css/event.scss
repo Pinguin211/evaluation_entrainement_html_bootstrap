@@ -1,7 +1,7 @@
 
 @mixin body ($margin-sides) {
   body {
-    margin: 2vh $margin-sides 0 $margin-sides;
+    margin: 0 $margin-sides 0 $margin-sides;
   }
 }
 

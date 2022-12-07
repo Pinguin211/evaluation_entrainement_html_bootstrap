@@ -1,0 +1,33 @@
+@mixin main($margin-sides) {
+  main, footer {
+    margin: 0 $margin-sides;
+  }
+}
+
+main {
+  box-shadow: 0 0 30px black;
+  padding-bottom: 30px;
+  padding-top: 70px;
+  background-color: whitesmoke;
+
+}
+
+@media screen and (max-width: 768px) {
+  @include main(5vw);
+}
+
+@media screen and (min-width: 768px) {
+  @include main(7vw);
+}
+
+@media screen and (min-width: 992px) {
+  @include main(10vw);
+}
+
+@media screen and (min-width: 1200px) {
+  @include main(12vw);
+}
+
+@media screen and (min-width: 1400px) {
+  @include main(15vw);
+}

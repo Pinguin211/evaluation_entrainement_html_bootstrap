@@ -1,15 +1,14 @@
 /* header */
 header {
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   background-color: #ECECEC;
   box-shadow: 0 3px 10px #3F3F3F;
   left: 0;
   right: 0;
 
-  .navbar-expand-md, .navbar-brand{
-    padding-top: 0;
-    padding-bottom: 0;
+  .navbar-expand-lg, .navbar-brand{
+    padding: 0;
   }
 
   #logo {
@@ -31,7 +30,7 @@ header {
     filter: brightness(100%);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     .navbar-nav>li {
       border-left: 2px grey solid;
     }
