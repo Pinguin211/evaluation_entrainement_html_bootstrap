@@ -1,24 +1,101 @@
+main {
+  padding-top: 120px;
+}
 
-@mixin body ($margin-sides) {
-  body {
-    margin: 0 $margin-sides 0 $margin-sides;
+article {
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    section {
+      margin: 30px 0;
+    }
   }
-}
 
-@media screen and (min-width: 768px) {
-  @include body(15vw);
-}
-@media screen and (max-width: 768px){
-  @include body(5vw);
-}
+  @media screen and (min-width: 768px) {
+    font-size: 1.1rem;
+    section {
+      margin: 32px 0;
+    }
+  }
 
-.img-event img, .img-event p {
-  margin: 15px 15px;
-}
+  @media screen and (min-width: 992px) {
+    font-size: 1.2rem;
+    section {
+      margin: 34px 0;
+    }
+  }
 
-.img-event , .iframe-event{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
+  @media screen and (min-width: 1200px) {
+    font-size: 1.3rem;
+    section {
+      margin: 37px 0;
+    }
+  }
 
+  @media screen and (min-width: 1400px) {
+    font-size: 1.4rem;
+    section {
+      margin: 40px 0;
+    }
+  }
+
+  display: grid;
+  padding: 30px 90px;
+
+  .title {
+    text-align: center;
+    font-family: bootstrap-icons;
+    padding: 0 10%;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: Baskerville;
+  }
+  p:first-letter {
+    font-size: 130%;
+    font-weight: bold;
+  }
+
+  @mixin section {
+    display: flex;
+
+    :nth-child(1n+0) {
+      padding: 0 10px;
+    }
+  }
+
+  .section-image {
+    @include section;
+    img {
+      width: 60%;
+    }
+  }
+
+  .section-iframe {
+    @include section();
+    iframe {
+      width: 200%;
+    }
+  }
+
+  figure {
+    padding: 2%;
+    margin: 30px;
+    border: pink 2px solid;
+    border-radius: 20px;
+    font-size: 80%;
+    text-align: center;
+    font-style: italic;
+
+    blockquote {
+      font-weight: bold;
+    }
+    figcaption {
+      text-decoration: underline;
+    }
+
+  }
+
+
+}
